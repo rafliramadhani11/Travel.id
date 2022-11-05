@@ -6,36 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
     <title>Travel.Id</title>
-    <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <!-- ------------ -->
-    <!-- BOOTSTRAP JS -->
-    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js" />
-    <!-- ------------ -->
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="home">
     <!-- NAVIGATION BAR SECTION -->
     <div class="navbar">
       <div style="font-size: 2em; font-weight: 600">
-        <a href="">
+        <a href="#body">
           <img src="img/Travel.id.png" alt="" />
         </a>
       </div>
       <div style="width: 45%; font-size: 16px">
         <ul>
           <li>
-            <a href="#home">Home</a>
-            <div></div>
+            <a href="#home" class="page-scroll">Home</a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a href="#services" class="page-scroll">Services</a>
           </li>
           <li>
-            <a href="#destination">Destinations</a>
+            <a href="#destination" class="page-scroll">Destinations</a>
           </li>
           <li>
-            <a href="#footer">About Us</a>
+            <a href="#footer" class="page-scroll">About Us</a>
           </li>
         </ul>
       </div>
@@ -44,20 +38,20 @@
 
     <!-- HERO SECTION -->
     <div class="hero">
-      <div>
-        <img src="img/Rectangle 25.png" style="width: 100%; position: absolute; z-index: -1; bottom: 0" height="30%" />
-        <img src="img/female-tourist.png" alt="" style="position: absolute; z-index: 1; right: 0; bottom: 0" width="53%" height="95%" />
+      <div class="img-hero">
+        <img src="img/Rectangle 25.png" style="width: 100%; bottom: 0; position: absolute" height="30%" />
+        <img src="img/female-tourist.png" alt="" style="position: absolute; right: 0; bottom: 0" width="53%" height="95%" />
       </div>
       <div>
-        <div style="margin: 0 auto; width: 90%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center">
-          <span style="font-size: 3em; margin-top: 10%"> Make Your Trip Memorable Book </span>
-          <hr style="border: none; height: 2px; width: 40%; background-color: black; margin: 1% 0" />
+        <div class="text1">
+          <span> Make Your Trip Memorable Book </span>
+          <hr />
           <p>
             We have partners with several destination that you <br />
             make feel at home there,we will guide you with our <br />
             best service.
           </p>
-          <div style="width: 15%; margin-top: 2%; height: 50px; display: flex; align-items: center; justify-content: center; border: #e9750a 1px solid; border-radius: 30px; color: #e9750a; font-weight: 400" class="btn-get-started">
+          <div class="btn-get-started">
             <a href=""> Get Started </a>
           </div>
         </div>
@@ -367,6 +361,9 @@
         </div>
       </div>
     </div>
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
 
     <!-- AKHIR FOOTER SECTION -->
   </body>
