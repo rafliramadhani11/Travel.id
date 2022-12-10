@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon-16x16.png" />
     <title>Travel.Id</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="home">
+    
     <!-- NAVIGATION BAR SECTION -->
-    <div class="navbar">
-      <div style="font-size: 2em; font-weight: 600">
-        <a href="#body">
+    <div class="navbar">  
+      <div style="font-size: 2em; font-weight: 600"> 
           <img src="img/Travel.id.png" alt="" />
         </a>
-      </div>
-      <div style="width: 45%; font-size: 16px">
+      </div>                                         
+      <div class="service" style="width: 40%; font-size: 16px;">       
         <ul>
           <li>
-            <a href="#home" class="page-scroll">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#services" class="page-scroll">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#destination" class="page-scroll">Destinations</a>
+            <a href="#destination">Destinations</a>
           </li>
           <li>
-            <a href="#footer" class="page-scroll">About Us</a>
+            <a href="#footer">About Us</a>
           </li>
         </ul>
-      </div>
-    </div>
+      </div>        
+      <div style="width: 20vw;display: flex; align-items: center;justify-content: space-between;">
+        <a href="signin.html" style="color: black;">
+          <div class="btn-login" style="width: 8vw;height: 7vh;border: 1px solid;display: flex; align-items: center;justify-content: center;border-radius: 2vw;">
+            Sign In
+          </div>
+        </a>
+        <a href="signup.html" style="color: white;">
+          <div style="width: 8vw;height: 7vh;border: 1px solid;display: flex; align-items: center;justify-content: center; border-radius: 2vw;background-color: #e9750a;">
+            Sign Up
+          </div>
+        </a>
+      </div>                                 
+    </div>            
     <!-- AKHIR NAVIGATION BAR -->
 
     <!-- HERO SECTION -->
     <div class="hero">
       <div class="img-hero">
-        <img src="img/Rectangle 25.png" style="width: 100%; bottom: 0; position: absolute" height="30%" />
-        <img src="img/female-tourist.png" alt="" style="position: absolute; right: 0; bottom: 0" width="53%" height="95%" />
+        <img src="img/Rectangle 25.png" style="width: 100%; bottom: 0; position: absolute" height="40%" />
+        <img src="img/female-tourist.png" alt="" style="position: absolute; right: 0; bottom: 0" width="60%" height="95%" />
       </div>
       <div>
         <div class="text1">
@@ -90,25 +106,31 @@
       </div>
       <div style="display: flex; margin-top: 5%; margin: 0 auto; margin-left: 8%; margin-top: 5%; width: 90%">
         <div>
-          <div style="border-radius: 10px; background: #ffffff; box-shadow: 5px 5px 10px #919191, -5px -5px 10px #ffffff; width: 80%; height: 250px">
+          <div class="destination1">
             <div>
-              <img src="img/su-san-lee-E_eWwM29wfU-unsplash 1.png" width="100%" />
+              <a href="destination.php?kode=kyoto">
+                <img src="img/su-san-lee-E_eWwM29wfU-unsplash 1.png" width="100%" />
+              </a>
             </div>
-            <div style="display: flex; width: 90%; margin: 2% auto; align-items: center; justify-content: space-between">
-              <p>Kyoto, Japan</p>
-              <div style="display: flex; align-items: center; justify-content: space-between; width: 15%">
-                <img src="img/star 1.png" alt="" />
-                <p>4,8</p>
+            <div class="wrapper">
+              <div class="desc-score">
+                <p>Kyoto, Japan</p>
+                <div class="score">
+                  <img src="img/star 1.png" alt="" />
+                  <p>4,8</p>
+                </div>
               </div>
-            </div>
-            <div style="width: 90%; margin: 0 auto; text-align: start">
-              <p>$ 380</p>
+              <div class="pricing">
+                <p>$ 380</p>
+              </div>
             </div>
           </div>
         </div>
         <div>
           <div style="border-radius: 10px; background: #ffffff; box-shadow: 5px 5px 10px #919191, -5px -5px 10px #ffffff; width: 80%; height: 250px">
-            <img src="img/kharl-anthony-paica-PXl3L6A1hRE-unsplash 1.png" width="100%" />
+            <a href="destination.php?kode=bali">
+              <img src="img/kharl-anthony-paica-PXl3L6A1hRE-unsplash 1.png" width="100%" />
+            </a>
             <div style="display: flex; width: 90%; margin: 2% auto; align-items: center; justify-content: space-between">
               <p>Bali, Indonesia</p>
               <div style="display: flex; align-items: center; justify-content: space-between; width: 15%">
@@ -123,7 +145,9 @@
         </div>
         <div>
           <div style="border-radius: 10px; background: #ffffff; box-shadow: 5px 5px 10px #919191, -5px -5px 10px #ffffff; width: 80%; height: 250px">
-            <img src="img/young-shih-hRAEeor1hwo-unsplash 1.png" width="100%" />
+            <a href="destination.php?kode=zermatt">
+              <img src="img/young-shih-hRAEeor1hwo-unsplash 1.png" width="100%" />
+            </a>
             <div style="display: flex; width: 90%; margin: 2% auto; align-items: center; justify-content: space-between">
               <p>Zermatt, Swiss</p>
               <div style="display: flex; align-items: center; justify-content: space-between; width: 15%">
@@ -140,7 +164,9 @@
       <div style="display: flex; justify-content: space-evenly; width: 70%; margin: 5% auto">
         <div>
           <div style="border-radius: 10px; background: #ffffff; box-shadow: 0px 5px 10px #919191, 0px 0px 0px #ffffff; width: 80%; height: 250px">
-            <img src="img/bradley-prentice-dYER_zrGCmI-unsplash 1.png" width="100%" />
+            <a href="destination.php?kode=bangkok">
+              <img src="img/bradley-prentice-dYER_zrGCmI-unsplash 1.png" width="100%" />
+            </a>
             <div style="display: flex; width: 90%; margin: 2% auto; align-items: center; justify-content: space-between">
               <p>Bangkok, Thailand</p>
               <div style="display: flex; align-items: center; justify-content: space-between; width: 15%">
@@ -155,7 +181,9 @@
         </div>
         <div>
           <div style="border-radius: 10px; background: #ffffff; box-shadow: 0px 5px 10px #919191, 0px 0px 0px #ffffff; width: 80%; height: 250px">
-            <img src="img/steffen-b-28joUilHigc-unsplash 1.png" width="100%" />
+            <a href="destination.php?kode=yogya">
+              <img src="img/steffen-b-28joUilHigc-unsplash 1.png" width="100%" />
+            </a>
             <div style="display: flex; width: 90%; margin: 2% auto; align-items: center; justify-content: space-between">
               <p>Yogyakarta, Indonesia</p>
               <div style="display: flex; align-items: center; justify-content: space-between; width: 15%">
@@ -326,7 +354,7 @@
             <button class="button"></button>
           </div>
         </div>
-        <div style="font-size: 12px; font-family: 'Jost'; text-align: center; margin-top: 20%">&copy; Copyright 2021 All right reserved | Built by Rafli, Firda, Fitria, Aliffia</div>
+        <div style="font-size: 12px; font-family: 'Jost'; text-align: center; margin-top: 20%">&copy; Copyright 2021 All right reserved | Built by Rafli, Firda, Fitria, Aliffia, Abid</div>
       </div>
       <div style="display: flex; justify-content: space-around; width: 40%">
         <div style="margin-top: 17%">
@@ -356,9 +384,8 @@
       </div>
     </div>
 
+    <!-- AKHIR FOOTER SECTION -->
     <script src="jquery.js"></script>
     <script src="script.js"></script>
-
-    <!-- AKHIR FOOTER SECTION -->
   </body>
 </html>

@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Jost';
+  list-style: none;
+  text-decoration: none;
 }
 @font-face {
   font-family: 'Jost';
@@ -20,7 +22,6 @@ body {
 
 /* NAVIGATION BAR */
 .navbar {
-  /* position: sticky; */
   top: 0;
   left: 0;
   right: 0;
@@ -33,25 +34,25 @@ body {
   background-color: white;
 }
 
-.navbar ul {
+.navbar .service ul {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
 }
 
-.navbar ul li span {
+.navbar .service ul li span {
   width: 100%;
   color: maroon;
 }
 
-.navbar ul li a {
+.navbar .service ul li a {
   position: relative;
   color: black;
   text-decoration: none;
 }
 
-.navbar ul li a:after {
+.navbar .service ul li a:after {
   position: absolute;
   content: '';
   width: 0%;
@@ -61,8 +62,22 @@ body {
   transition: 0.2s;
 }
 
-.navbar ul li a:hover::after {
+.navbar .service ul li a:hover::after {
   width: 100%;
+}
+.navbar .btn-login {
+  width: 8vw;
+  height: 7vh;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2vw;
+  transition: 0.5s;
+}
+.navbar .btn-login:hover {
+  background-color: #e9750a;
+  color: white;
 }
 
 /* ------------------------------------ */
@@ -72,11 +87,11 @@ body {
   width: 100%;
   margin: 2% auto;
   position: relative;
-  height: 80vh;
+  height: 100vh;
 }
 
 .hero .img-hero {
-  height: 80vh;
+  height: 90vh;
   transition: 1s;
   opacity: 0;
   transform: translateX(500px);
@@ -145,14 +160,12 @@ body {
 .service-section {
   width: 100%;
   height: 60vh;
-  padding: 5% 5%;
+  padding: 5%;
   margin: 0 auto;
   margin-top: 5%;
-  /* border: 1px solid; */
 }
 
 .service-section .wrapper-circle {
-  /* border: 1px solid; */
   width: 12%;
   display: flex;
   flex-direction: column;
@@ -207,6 +220,35 @@ body {
   width: 100%;
   height: 100vh;
   margin-top: 10%;
+}
+
+.destination-section .destination1 {
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #919191, -5px -5px 10px #ffffff;
+  width: 80%;
+  height: 250px;
+}
+
+.destination-section .destination1 .wrapper .desc-score {
+  display: flex;
+  width: 90%;
+  margin: 2% auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.destination-section .destination1 .wrapper .score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.destination-section .destination1 .wrapper .pricing {
+  width: 90%;
+  margin: 0 auto;
+  text-align: start;
 }
 
 /* ------------------------------------- */
@@ -345,3 +387,181 @@ body {
 }
 
 /* ------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* destination.php STYLE */
+
+/* JUMBOTRON */
+.jumbotron {
+  width: 92%;
+  height: 75vh;
+  margin: 0 auto;
+  overflow-y: hidden;
+  border-radius: 3vh;
+  padding: 3.5%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  color: white;
+}
+/* --------------------- */
+/* TOUR STYLE*/
+.tour {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -10%;
+}
+
+.tourContent {
+  width: 20%;
+  height: 80vh;
+  margin-right: 5%;
+}
+.tourContent .content1 {
+  width: 100%;
+  height: 55vh;
+  margin: 0 auto;
+  border-radius: 6vh;
+  margin-bottom: 5%;
+}
+
+.tourContent .content2 {
+  width: 100%;
+  height: 55vh;
+  border-radius: 6vh;
+  position: absolute;
+  bottom: 0;
+  margin-top: 15%;
+}
+
+.tourContent .content3 {
+  width: 100%;
+  height: 55vh;
+  margin: 0 auto;
+  border-radius: 6vh;
+  margin-bottom: 5%;
+}
+/* --------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* SIGN IN STYLE */
+
+/* SIGN IN SECTION */
+.signin {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin .wrapper {
+  width: 60vw;
+  height: 60vh;
+  border-radius: 2vw;
+  background-color: white;
+  display: flex;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.signin .wrapper .login {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin .wrapper .greeting {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b2cad6;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+.signin .wrapper .greeting .btn-signup {
+  width: 10vw;
+  height: 5vh;
+  border: 1px solid black;
+  border-radius: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: 0.5s;
+}
+.signin .wrapper .greeting .btn-signup:hover {
+  background-color: #e9750a;
+  border: none;
+  color: white;
+}
+/* ----------------------------------------------------- */
+
+/* SIGN UP SECTION */
+.signup {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup .wrapper {
+  width: 60vw;
+  height: 60vh;
+  border-radius: 2vw;
+  background-color: white;
+  display: flex;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.signup .wrapper .daftar {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup .wrapper .greeting {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b2cad6;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+}
+.signup .wrapper .greeting .btn-signin {
+  width: 10vw;
+  height: 5vh;
+  border: 1px solid black;
+  border-radius: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: 0.5s;
+}
+.signup .wrapper .greeting .btn-signin:hover {
+  background-color: #e9750a;
+  border: none;
+  color: white;
+}
+/* ----------------------------------------------------- */
